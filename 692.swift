@@ -47,7 +47,6 @@ struct Heap<T: Comparable> {
         elements.swapAt(0, count - 1)
         let value = elements.removeLast()
         bubbleDown(0)
-
         return value
     }
 
@@ -70,7 +69,7 @@ struct Heap<T: Comparable> {
     mutating func bubbleDown(_ index: Int) {
         var i = index
         let value = elements[i]
-
+        
         while 2 * i + 1 < count {
             var childIndex = 2 * i + 1
             let rightIndex = childIndex + 1
