@@ -21,6 +21,6 @@ func generateBinaryNumber(_ n: Int) -> [[Int]] {
     return binaryNumbers  
 }
 
-let n = 3
-let result = generateBinaryNumber(3)
+let n = 5
+let result = generateBinaryNumber(n)
 print(result)
